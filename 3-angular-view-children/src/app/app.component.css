@@ -1,0 +1,15 @@
+.input-container{
+    width: 320px;
+    margin: 200px auto;
+    padding: 20px 50px;
+}
+input[type=text]{
+    width: 320px;
+    height: 30px;
+    border-radius: 3px;
+}
+button{
+    margin: 20px auto;
+    width: 320px;
+    height: 30px;
+}
