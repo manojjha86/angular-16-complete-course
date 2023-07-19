@@ -1,0 +1,12 @@
+.card{
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #28282B;
+    color: white;
+    border-radius: 3px;
+    width: 400px;
+}
+
+button{
+    padding: 10px 30px;
+}
