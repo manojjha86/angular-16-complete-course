@@ -1,0 +1,18 @@
+.container{
+    width: 320px;
+    margin: 100px auto;
+    padding: 30px 40px;
+    border-radius: 3px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    background-color: #eee;
+}
+
+button{
+    background-color: #282828;
+    color:white;
+    padding: 5px 10px;
+    font-size: 10px;
+    border: none;
+    border-radius: 2px;
+    margin-left: 5px;
+}
