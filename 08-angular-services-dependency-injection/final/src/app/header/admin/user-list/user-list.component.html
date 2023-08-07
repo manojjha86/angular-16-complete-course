@@ -1,0 +1,9 @@
+<div class="admin-user-list">
+    <div class="admin-user-detail" *ngFor="let user of userList">
+        <div class="admin-user-name">{{ user.name }}</div>
+        <div class="admin-user-gender">{{ user.gender }}</div>
+        <div class="admin-user-subtype">{{ user.subType }}</div>
+        <div class="admin-user-active">{{ user.status }}</div>
+        <button class="admin-user-show-detail-button" (click)="ShowUserDetails(user)">+</button>
+    </div>   
+</div>

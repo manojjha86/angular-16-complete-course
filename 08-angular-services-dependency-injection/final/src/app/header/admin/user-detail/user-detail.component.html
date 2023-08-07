@@ -1,0 +1,13 @@
+<div class="user-detail-container" *ngIf="selectedUser">
+    <div>
+        <img class="user-detail-avatar-image" [src]="'./assets/images/'+selectedUser.gender.toLowerCase()+'-avatar.png'">
+    </div>
+    <div class="user-detail-info">
+        <h2>User Detail</h2>
+        <p><b>Name:</b> {{ selectedUser.name }}</p>
+        <p><b>Gender:</b> {{ selectedUser.gender }}</p>
+        <p><b>Subscription Type:</b> {{ selectedUser.subType }}</p>
+        <p><b>Status:</b> {{ selectedUser.status }}</p>
+    </div>    
+</div>
+
