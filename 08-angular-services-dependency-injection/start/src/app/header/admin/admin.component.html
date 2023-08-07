@@ -1,0 +1,23 @@
+<div class="admin-container">
+    <div class="admin-add-user">
+        <input type="text" placeholder="User Name" [(ngModel)]="name">
+        <select name="gender" [(ngModel)]="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br>
+        <select name="subscriptionType" [(ngModel)]="subType">
+            <option value="Monthly">Monthly</option>
+            <option value="Quaterly">Quaterly</option>
+            <option value="Yearly">Yearly</option>
+        </select>
+        <select name="active" [(ngModel)]="status">
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select>
+        <br>
+        <button class="admin-button">CREAT</button>
+    </div>
+    <app-user-list></app-user-list>
+    <app-user-detail></app-user-detail>
+</div>
