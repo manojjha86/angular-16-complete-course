@@ -1,0 +1,155 @@
+<div class="main-admin-container">
+
+    <!--HEADER WITH LOGO AND FILTER DROPDOWN-->
+    <div class="admin-header">
+        <div class="admin-header-title">
+            <h2>Student Management</h2>
+        </div>
+        <div class="admin-header-filter">
+            <select name="gender" class="filter-select">
+                <option value="All">All</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>    
+    </div>
+    <!--HEADER ENDS-->
+
+
+    <div class="admin-content">
+        <table>
+
+            <!--TABLE HRADER-->
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+                <th>Course</th>
+                <th>Marks</th>
+                <th>Percentage</th>
+                <th>Fees</th>
+                <th></th>
+                <th>
+                    <button class="insert-button" (click)="OnInsertClicked()">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </th>
+            </tr>
+            <!--TABLE HEADER ENDS-->
+
+            <!--TR FOR INSERING A NEW STUDENT-->
+            <tr *ngIf="isInserting">
+                <td></td>
+                <td>
+                    <input type="text" #name>
+                </td>
+                <td>
+                    <select name="gender" class="select-gender-course" #gender>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="date" #dob>
+                </td>
+                <td>
+                    <select name="course" class="select-gender-course" #course>
+                        <option value="MBA">MBA</option>
+                        <option value="B.Tech">B.TECH</option>
+                        <option value="B.Sc">M.SC</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="600" #marks>
+                </td>
+                <td></td>
+                <td>
+                    <input type="number" min="0" #fee>
+                </td>
+                <td>
+                    <button class="save-button" (click)="OnInsertSaved()">
+                        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                    </button>
+                </td>
+                <td>
+                    <button class="cancel-button" (click)="OnInsertCancelled()">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </td>
+            </tr>
+            <!--INSERT NEW STUDENT ROW ENDS-->
+
+            <!--DISPLAY ALL STUDENTS FROM STUDENTS ARRAY-->
+            <tr *ngFor="let std of students">
+                <td>{{ std.id }}</td>
+
+                <td *ngIf="!isEditing || std.id !== stdIdToEdit">{{ std.name }}</td>
+                <td *ngIf="isEditing && std.id === stdIdToEdit">
+                    <input type="text" [value]="std.name" #editName>
+                </td>
+
+                <td *ngIf="!isEditing || std.id !== stdIdToEdit">{{ std.gender }}</td>
+                <td *ngIf="isEditing && std.id === stdIdToEdit">
+                    <select name="gender" class="select-gender-course" [value]="std.gender" #editGender>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+
+                <td *ngIf="!isEditing || std.id !== stdIdToEdit">{{ std.dob }}</td>
+                <td *ngIf="isEditing && std.id === stdIdToEdit">
+                    <input type="date" [value]="std.dob" #editDob>
+                </td>
+
+                <td *ngIf="!isEditing || std.id !== stdIdToEdit">{{ std.course }}</td>
+                <td *ngIf="isEditing && std.id === stdIdToEdit">
+                    <select name="course" class="select-gender-course" [value]="std.course" #editCourse>
+                        <option value="MBA">MBA</option>
+                        <option value="B.Tech">B.TECH</option>
+                        <option value="M.Sc">M.SC</option>
+                    </select>
+                </td>
+
+                <td *ngIf="!isEditing || std.id !== stdIdToEdit">{{ std.marks }}</td>
+                <td *ngIf="isEditing && std.id === stdIdToEdit">
+                    <input type="number" min="0" max="600" [value]="std.marks" #editMarks>
+                </td>
+
+                <td>{{ std.marks / totalMarks }}</td>
+
+                <td *ngIf="!isEditing || std.id !== stdIdToEdit">{{ std.fee | currency: 'INR': true: '3.0-0'}}</td>
+                <td *ngIf="isEditing && std.id === stdIdToEdit">
+                    <input type="number" min="0" [value]="std.fee" #editFee>
+                </td>
+
+                <td *ngIf="!isEditing || std.id !== stdIdToEdit">
+                    <button class="edit-button" (click)="OnEditClicked(std.id)">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    </button>
+                </td>
+                <td *ngIf="!isEditing || std.id !== stdIdToEdit">
+                    <button class="delete-button">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                </td>
+                <td *ngIf="isEditing && std.id === stdIdToEdit">
+                    <button class="save-button" (click)="OnEditSaved(std)">
+                        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                    </button>
+                </td>
+                <td *ngIf="isEditing && std.id === stdIdToEdit">
+                    <button class="cancel-button" (click)="OnEditCancelled()">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--PAGE FOOTER-->
+    <div class="admin-footer">
+        <p>All rights reserved by procademy. @Copyright 2023.</p>         
+    </div>
+    <!--PAGE FOOTER ENDS-->
+</div>
