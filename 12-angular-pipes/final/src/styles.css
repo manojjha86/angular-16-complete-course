@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Roboto:wght@100;300;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #343434;
+    color: white;
+}
+.main-admin-container{
+    margin: 60px 100px;
+    background-color: #28282B;
+    color:#17202A;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.admin-header{
+    background-color: #28282B;
+    margin: 0px 20px;
+    border-bottom: #343434 3px solid;
+    padding: 15px 50px;
+    color: #FFF;
+    display: flex;
+}
+.admin-header-title{
+    margin: 0px 20px;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+}
+.admin-header-filter{
+    margin: 0px 200px;
+}
+.filter-select{
+    width: 280px;
+    height: 35px;
+    border: none;
+}
+.admin-content{
+    padding: 50px 30px;
+    width: 100%;
+    height: 480px;
+    overflow-y: scroll;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.admin-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.admin-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+.admin-content::-webkit-scrollbar-thumb {
+    background: #E74C3C; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.admin-content::-webkit-scrollbar-thumb:hover {
+    background: #009eb3; 
+}
+table{
+    border-collapse: collapse;  
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+th, td{
+    padding: 10px 10px;
+    border: 1px solid #343434;
+    color: white;
+}
+/* tr:nth-child(even){background-color: #212F3D;} */
+tr:hover {background-color: #343434;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1C2833;
+  }
+  .insert-button{
+    padding: 5px 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+  }
+  .edit-button{
+    padding: 5px 5px;
+    border: none;
+    color: #28B463;
+    font-weight:bolder;
+    background-color: transparent;
+  }
+
+  .delete-button, .cancel-button{
+    padding: 5px 5px;
+    border: none;
+    color: #E74C3C;
+    font-weight:bolder;
+    background-color: transparent;
+  }
+  .save-button{
+    padding: 5px 5px;
+    border: none;
+    color: #2874A6;
+    font-weight:bolder;
+    background-color: transparent;
+  }
+  .admin-footer{
+    padding: 15px 30px;
+    margin: 0px 20px;
+    color: #FFF;
+    border-top: #343434 3px solid;
+    text-align: center;
+  }
+
+  input[type=text], input[type=date]{
+    width: 160px;
+    height: 30px;
+    padding: 5px 10px;
+  }
+  input[type=number]{
+    width: 120px;
+    height: 30px;
+    padding: 5px 10px;
+  }
+  .select-gender-course{
+    width: 120px;
+    height: 30px;
+    padding: 5px 10px;
+  }
