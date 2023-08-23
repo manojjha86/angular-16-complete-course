@@ -1,0 +1,32 @@
+.counter-container{
+    text-align: center;
+}
+.task-container{
+    margin-top: 20px;
+    border-top: #884EA0 3px solid;
+    padding: 30px 300px;
+    text-align: center;
+}
+.task-item{
+    padding: 15px 50px;
+    margin: 5px 0px;
+    width: 660px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #5B2C6F;
+}
+button{
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 2px;
+    background-color: #5B2C6F;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px 10px;
+    color:#D2B4DE;
+}
+span{
+    margin: 10px 10px;
+    font-size: 35px;
+    padding: 0px 20px;
+}
