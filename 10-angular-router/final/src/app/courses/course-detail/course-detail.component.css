@@ -1,0 +1,187 @@
+.courses-detail-main-container{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #efefef;
+    padding: 10px 0px;
+}
+.course-detail-container{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 10px;
+    display:flex;
+}
+.course-details{
+    width: 70%;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.course-banner-image{
+    width: 100%;
+    height: 320px;
+}
+.course-title{
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+.course-info{
+    display: flex;
+    width: 100%;
+    margin: 10px 0px;
+}
+.course-info-rating, .course-info-duration,.course-info-author{
+    width: 33%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.course-desc{
+    padding: 30px 50px;
+    font-size: 14px;
+}
+
+.course-fake-rewiews-list{
+    padding: 30px 50px;
+    font-size: 14px;
+}
+
+hr{
+    margin: 10px 0px;
+    border: #DDD 2px solid;
+  }
+
+.course-fake-rewiews{
+    margin: 15px 0px;
+}
+
+.course-action-items{
+    width: 28%;
+    margin-left: 20px;
+    padding: 5px 5px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.side-bar-banner{
+    width: 100%;
+    height: 200px;
+    background-color: #28282B;
+    text-align: center;
+    padding: 70px 20px;
+    color:white;
+}
+.course-selection-cat, .course-apply-coupon{
+    display: flex;
+    width: 100%;
+}
+
+.course-selection-personal{
+    width: 50%;
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: #28282B 2px solid;
+}
+.course-selection-team{
+    width: 50%;
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: #dddddd 2px solid;
+}
+.course-price-discount{
+    padding: 15px 20px;
+}
+.offer-timer{
+    color: #CB4335;
+    font-size: 14px;
+    padding: 5px 5px;
+}
+.buy-course-button{
+    padding: 10px 30px;
+    width: 90%;
+    margin: 10px 15px;
+    border: none;
+    background-color: #CB4335;
+    color: white;
+}
+
+.guarantee-div{
+    width: 100%;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.course-selection-gift, .course-selection-coupon{
+    width: 50%;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #28282B;
+    font-weight: bold;
+}
+
+.course-selection-gift > a, .course-selection-coupon > a{
+    color: #28282B;
+    font-weight: bold;
+}
+
+.devider{
+    border-bottom: #ddd 2px solid;
+    margin: 30px 0px;
+}
+.devider-message{
+    width: 30px;
+    height: 30px;
+    padding:4px 7px;
+    font-size: 12px;
+    border: #ddd 2px solid;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #888;
+}
+
+.subscribe-to{
+    width: 100%;
+    font-size: 18px;
+    padding: 20px 20px;
+}
+
+.subscribe-to > p{
+    font-size: 12px;
+    margin: 20px 0px;
+}
+
+.subscribe-to > p > a{
+    font-weight: bold;
+    color: #CB4335;
+}
+
+.subscribe-course-button{
+    padding: 10px 30px;
+    width: 90%;
+    margin: 10px 15px;
+    border: #CB4335 2px solid;
+    color: #CB4335;
+    background-color: white;
+}
+
+.prev-nect-course{
+    margin: 20px 0px;
+    padding: 30px 0px;
+}
+.prev-nect-course > button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #CB4335;
+    color:#ddd;
+}
+.prev-btn{
+    float: left;
+}
+.next-btn{
+    float: right;
+}

@@ -1,0 +1,41 @@
+<div class="page-header-topbar">
+  <div class="page-header-secondary-msg">
+    <ul class="social-icons">
+      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+    </ul>
+  </div>  
+  <div class="page-header-secondary-nav">
+    <a routerLink="Home" fragment="search">SEARCH</a>
+    <a routerLink="Home" fragment="courses">POPULAR</a>
+    <a routerLink="Home" fragment="testimony">TESTIMONY</a>
+    <a routerLink="Home" fragment="services">SERVICES</a>
+    <a routerLink="Home" fragment="contact">CONTACT</a>
+  </div>
+</div>
+<div class="page-header">
+    <!--HOME HEADER-->
+    <div class="page-header-logo">
+      <h2>procademy</h2>
+    </div>
+    <div>
+      <div class="page-header-secondary">
+        
+      </div>      
+      <div class="page-header-primary">
+        <div class="page-header-primary-nav">
+            <a routerLink="Home" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">HOME</a>
+            <a [routerLink]="'About'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">ABOUT</a>
+            <a routerLink="Contact" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">CONTACT</a>
+            <a routerLink="Courses" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">COURSES</a>
+        </div>
+        <div class="page-header-login-logout">
+            <a routerLink="/Login">LOGIN</a>
+            <a routerLink="/Login" [queryParams]="{logout: true}">LOGOUT</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>

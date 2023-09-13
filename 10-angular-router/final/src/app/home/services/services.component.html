@@ -1,0 +1,10 @@
+<div class="section-header">
+    <h1>Our Services</h1>
+  </div>
+  <div class="home-page-services">
+    <div class="home-page-service-card" *ngFor="let service of services">
+      <img [src]="service.image">
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.description }}</p>
+    </div>
+  </div>

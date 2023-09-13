@@ -1,0 +1,183 @@
+.checkout-container {
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 50px 100px;
+  }
+  
+  em {
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  hr {
+    color: #fff;
+    margin-bottom: 1.2rem;
+  }
+  
+  i{
+    margin-left: 2px;
+  }
+
+  label{
+    margin: 0px 10px;
+  }
+  /* Left Side Of Container */
+  .left-side {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 1.8rem 3.2rem;
+  }
+  
+  .text-box {
+    background: rgba(95, 121, 134, 0.8);
+    width: 100%;
+    padding: 1rem 2rem;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  /* Left container text */
+  
+  .home-heading {
+    color: #e8e8e1;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  
+  .home-price {
+    color: #aeae97;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .home-desc {
+    color: #e8e8e1;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Right Side of container */
+  
+  .right-side {
+    background-color: #fff;
+    padding: 1.8rem 3.2rem;
+  }
+  
+  .receipt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* border-bottom: solid 1px; */
+    margin-bottom: 1rem;
+  }
+  
+  .receipt-heading {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+  
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 1.5rem;
+    color: #64645f;
+    /* font-size: 1.2rem; */
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  
+  .total td {
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-top: solid 2px;
+    padding-top: 10px;
+  }
+  
+  .price {
+    text-align: end;
+  }
+  
+  /* Payment Section */
+  
+  .payment-heading {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .card-logo {
+    font-size: 2rem;
+  }
+  
+  .expires,
+  .form-box label {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .expires{
+    margin-bottom: 20px;
+  }
+  
+  .form-box input {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  .form-box select {
+    padding: 0.5rem;
+  }
+  
+  .form-box #cvv {
+    width: 25%;
+  }
+  .cvv-info{
+    margin-left: 20px;
+  }
+  .cvv-info:link,
+  .cvv-info:visited {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
+  .cvv-info:hover,
+  .cvv-info:active {
+    color: #5f7986;
+    text-decoration: none;
+  }
+  
+  .btn {
+    background-color: #FF5733;
+    border: none;
+    border-radius: 8px;
+    color: #eff2f3;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #5f7986;
+    transition: ease-out 0.1s;
+  }
+  
+  
+  .form-box *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(139, 139, 107, 0.5);
+    border-radius: 8px;
+  }
