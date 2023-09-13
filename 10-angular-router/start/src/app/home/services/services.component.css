@@ -1,0 +1,31 @@
+.section-header{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.home-page-services{
+    padding: 30px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.home-page-service-card{
+    padding: 10px 25px;
+    width: 280px;
+    /* border: #28282B 1px solid; */
+    margin: 10px 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.home-page-service-card > p{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.home-page-service-card > h3{
+    margin: 10px 0px;
+}
+.home-page-service-card > img{
+    width: 220px;
+    height: 180px;
+}

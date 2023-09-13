@@ -1,0 +1,31 @@
+.home-page-banner{
+    background-color: #28282B;
+    padding: 100px 50px;
+}
+.home-page-banner-slogan{
+    width: 600px;
+    color: white;
+    margin: 20px auto;
+}
+
+.home-page-banner-search{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.search-input{
+    width: 500px;
+    height: 38px;
+    padding: 10px 30px;
+}
+.search-button{
+    padding: 10px 20px;
+    height: 38px;
+    border: none;
+    margin-left: 5px;
+    background-color: #FF5733;
+    color: white;
+}
+h1, p{
+    margin: 10px 0px;
+}

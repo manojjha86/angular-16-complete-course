@@ -1,0 +1,35 @@
+<div class="section-header">
+    <h1>Popular Courses</h1>
+</div>
+<div class="home-page-popular-courses">
+    <div class="home-page-popular-courses-desc">
+        <p>
+            <b>Highest rated courses by students: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <div class="course-card" *ngFor="let course of popularCourses">
+        <div class="course-image">
+            <img [src]="course.image">
+        </div>
+        <div class="course-title">
+            {{ course.title }}
+        </div>
+        <div class="course-desc">
+            {{ course.desc.substring(0, 120) }}
+        </div>
+        <div class="course-price-rating">
+            <div class="course-price"><b>PRICE:</b> {{ course.price | currency }}</div>
+            <div class="course-rating"><b>RATINGS:</b> {{ course.rating }}</div>
+        </div>
+        <div class="course-action-buttons">
+            <button class="btn">BUY NOW</button>
+            <button class="btn">DETAILS</button>
+        </div>
+    </div>
+    <div class="popular-course-bottom">
+        <button class="go-to-course-button">
+            Go to Courses Page 
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+    </div>
+</div>

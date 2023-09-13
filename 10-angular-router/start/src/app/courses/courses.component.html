@@ -1,0 +1,32 @@
+<div class="courses-page-main-container">
+    <div class="courses-banner">
+        <div class="courses-banner-layover">
+            <h1>Empower your future with procademy's high quality online coding classes.</h1>
+        </div>
+    </div>
+    <div class="courses-page-all-courses">
+        <h2>Choose the course best suits you</h2>
+        <hr>
+        <div class="courses-page-course-list">
+            <div class="course-card" *ngFor="let course of AllCourses">
+                <div class="course-image">
+                    <img [src]="course.image">
+                </div>
+                <div class="course-title">
+                    {{ course.title }}
+                </div>
+                <div class="course-desc">
+                    {{ course.desc.substring(0, 120) }}
+                </div>
+                <div class="course-price-rating">
+                    <div class="course-price"><b>PRICE:</b> {{ course.price | currency }}</div>
+                    <div class="course-rating"><b>RATINGS:</b> {{ course.rating }}</div>
+                </div>
+                <div class="course-action-buttons">
+                    <button class="btn">BUY NOW</button>
+                    <button class="btn">DETAILS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

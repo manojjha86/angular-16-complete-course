@@ -1,0 +1,20 @@
+<div class="home-page-testimony">
+    <div class="section-header">
+      <h1>What Our Customer Thinks</h1>
+    </div>
+    <div class="all-testimony">
+        <div class="testimony" *ngFor="let name of testimonials; let i = index">
+          <div class="testimonial-image">
+            <img [src]="'./assets/users/user'+ (i + 1) +'.jpg'">
+          </div>
+          <div>
+            <h3>{{ name }}</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
