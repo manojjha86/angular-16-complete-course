@@ -1,0 +1,33 @@
+table{
+    border-collapse: collapse;  
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+/* th, td{
+    padding: 10px 10px;
+    border: 1px solid #343434;
+    color: white;
+} */
+th {
+    padding: 8px 10px;
+    background-color: #595959;
+    border: 1px solid #595959;
+    color: white;
+}
+
+td{
+    padding: 8px 10px;
+    border: 1px solid #595959;
+    color: white;
+    background-color: #404040;
+}
+
+.delete-button{
+    padding: 5px 5px;
+    border: none;
+    color: #E74C3C;
+    font-weight:bolder;
+    background-color: transparent;
+  }
