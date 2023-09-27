@@ -1,0 +1,119 @@
+<section class="container" [ngClass]="{'form-shadow': registrationForm.touched}">
+  <header>Registration Form</header>
+
+  <form class="form" (ngSubmit)="OnFormSubmitted()" #registrationForm="ngForm">
+    <div class="column">
+      <div class="input-box">
+        <input type="text" placeholder="First Name" 
+             name="firstname" ngModel required #fname="ngModel" />
+        <div>
+          <small *ngIf="fname.invalid && fname.touched">*First Name is a Required Field</small>
+          <span *ngIf="firstName">You entered: {{ firstName }}</span>
+        </div>
+      </div>
+      
+      <div class="input-box">
+        <input type="text" placeholder="Last Name" name="lastname" 
+          ngModel required #lname="ngModel"/>
+        <div>
+          <small *ngIf="lname.invalid && lname.touched">*Last Name is a Required Field</small>
+          <span *ngIf="lastName">You entered: {{ lastName }}</span>
+        </div>
+      </div>
+    </div>    
+
+    <div class="input-box">
+      <input type="text" placeholder="Email" name="email" 
+        ngModel required email #email="ngModel"/>
+      <div>
+        <small *ngIf="email.invalid && email.touched">*Entered Email is not valid</small>
+        <span *ngIf="emailAddress">You entered: {{ emailAddress }}</span>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="input-box">
+        <input type="number" placeholder="Phone Number" name="phone" ngModel/>
+      </div>
+      <div class="input-box">
+        <input type="date" placeholder="Date of Birth" name="dob" 
+          ngModel required #tempdob="ngModel"/>
+      </div>
+    </div>
+
+    <div class="input-box">
+      <input type="text" placeholder="username" name="username" 
+          ngModel required #uname="ngModel"/>
+      <button class="btn-gen-username" type="button"
+        [disabled]="fname.invalid || lname.invalid || tempdob.invalid"
+        (click)="GenerateUsername()">
+        Create a Username
+      </button>
+      <div>
+        <small *ngIf="uname.invalid && uname.touched">*Username is a required field</small>
+      </div>
+    </div>
+
+    <div class="gender-box">
+      <h3>Gender</h3>
+      <div class="gender-option">
+        <div class="gender" *ngFor="let gen of genders">
+          <input type="radio" [id]="gen.id" [value]="gen.value" name="gender" [ngModel]="defaultGender" />
+          <label for="check-male">{{ gen.display }}</label>
+        </div>
+      </div>
+    </div>
+    <div class="input-box address" ngModelGroup="address" #addr="ngModelGroup">
+      <label>Address</label>
+      <input type="text" placeholder="Street address" name="street1" ngModel required/>
+      <input type="text" placeholder="Street address line 2" name="street2" ngModel/>
+      <div class="column">
+        <div class="select-box">
+          <select name="country" [ngModel]="defaultCountry" required>
+            <option hidden>Country</option>
+            <option>America</option>
+            <option>Japan</option>
+            <option>India</option>
+            <option>Nepal</option>
+          </select>
+        </div>
+        <input type="text" placeholder="City" name="city" ngModel required />
+      </div>
+      <div class="column">
+        <input type="text" placeholder="Region" name="region" ngModel />
+        <input type="number" placeholder="Postal code" name="postal" ngModel required />
+      </div>
+    </div>
+
+    <div class="column">
+      <input type="checkbox" name="agreement" [ngModel]="IsAgreed">
+      <label for="agreement"> I agree to terms & conditions</label><br>
+    </div>
+    
+    <small *ngIf="addr.invalid && addr.touched">*Some of the address fields does not contain a valid value</small>
+    <input type="submit" value="Submit" class="submit-btn" [disabled]="!registrationForm.valid"> 
+  </form>
+</section>
+
+<section class="user-detail-container">
+  <div class="user-details-container">
+    <div class="user-avatar">
+      <p>{{firstName.slice(0, 1).toUpperCase()}}{{lastName.slice(0, 1).toUpperCase()}}</p>
+    </div>
+    <div class="user-details">
+      <div class="user-name">
+        <h2>{{ firstName }} {{ lastName }}</h2>
+      </div>
+      <p><b>Email:</b> {{ emailAddress}}</p>
+      <p><b>Username:</b> {{ userName }} </p>
+      <p><b>Date of birth:</b> {{ dob }}</p>
+      <div class="user-name">
+        <h3>Address</h3>
+      </div>
+      <span>{{country }}</span>.
+      <span>{{ city }}</span>.
+      <span>{{ region }}</span>.
+      <span> {{ postal }}</span>
+    </div>
+  </div>
+</section>
