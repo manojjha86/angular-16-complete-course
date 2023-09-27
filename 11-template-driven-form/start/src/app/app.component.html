@@ -1,0 +1,76 @@
+<section class="container">
+  <header>Registration Form</header>
+
+  <form class="form">
+    <div class="column">
+      <div class="input-box">
+        <input type="text" placeholder="First Name" />
+      </div> 
+
+      <div class="input-box">
+        <input type="text" placeholder="Last Name" />
+      </div>
+    </div>    
+
+    <div class="input-box">
+      <input type="text" placeholder="Email" />
+    </div>
+
+    <div class="column">
+      <div class="input-box">
+        <input type="number" placeholder="Phone Number" />
+      </div>
+      <div class="input-box">
+        <input type="date" placeholder="Date of Birth" />
+      </div>
+    </div>
+
+    <div class="input-box">
+      <input type="text" placeholder="username" />
+      <button class="btn-gen-username">
+        Create a Username
+      </button>
+    </div>
+
+    <div class="gender-box">
+      <h3>Gender</h3>
+      <div class="gender-option">
+        <div class="gender">
+          <input type="radio" id="check-male" name="gender" checked />
+          <label for="check-male">male</label>
+        </div>
+        <div class="gender">
+          <input type="radio" id="check-female" name="gender" />
+          <label for="check-female">Female</label>
+        </div>
+        <div class="gender">
+          <input type="radio" id="check-other" name="gender" />
+          <label for="check-other">prefer not to say</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-box address">
+      <label>Address</label>
+      <input type="text" placeholder="Street address" />
+      <input type="text" placeholder="Street address line 2" />
+      <div class="column">
+        <div class="select-box">
+          <select name="country">
+            <option hidden>Country</option>
+            <option>America</option>
+            <option>Japan</option>
+            <option>India</option>
+            <option>Nepal</option>
+          </select>
+        </div>
+        <input type="text" placeholder="City" />
+      </div>
+      <div class="column">
+        <input type="text" placeholder="Region" />
+        <input type="number" placeholder="Postal code" />
+      </div>
+    </div>
+    <input type="button" value="Submit" class="submit-btn"> 
+  </form>
+</section>
