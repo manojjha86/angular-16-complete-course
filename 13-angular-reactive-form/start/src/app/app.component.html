@@ -1,0 +1,135 @@
+<section class="container">
+  <header>Registration Form</header>
+
+  <form class="form">
+    <div class="column">
+      <div class="input-box">
+        <input type="text" placeholder="First Name" />
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Last Name" />
+      </div>
+    </div>    
+
+    <div class="input-box">
+      <input type="text" placeholder="Email" />
+    </div>
+
+    <div class="column">
+      <div class="input-box">
+        <input type="text" placeholder="username" />
+        <button class="btn-gen-username" type="button">
+          Create a Username
+        </button>
+      </div>
+      <div class="input-box">
+        <input type="date" placeholder="Date of Birth" />
+      </div>
+    </div>
+
+    
+
+    <div class="gender-box">
+      <h3>Gender</h3>
+      <div class="gender-option">
+        <div class="gender">
+          <input type="radio" value="male" id="check-male" />
+          <label for="check-male">Male</label>
+        </div>
+        <div class="gender">
+          <input type="radio" value="female" id="check-female" />
+          <label for="check-female">Female</label>
+        </div>
+        <div class="gender">
+          <input type="radio" value="other" id="check-other" />
+          <label for="check-other">Prefer not to say</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-box address">
+      <label>Address</label>
+      <input type="text" placeholder="Street address" />
+      <div class="column">
+        <div class="select-box">
+          <select name="country">
+            <option hidden>Country</option>
+            <option>America</option>
+            <option>Japan</option>
+            <option>India</option>
+            <option>Nepal</option>
+          </select>
+        </div>
+        <input type="text" placeholder="City" />
+      </div>
+      <div class="column">
+        <input type="text" placeholder="Region" />
+        <input type="number" placeholder="Postal code" />
+      </div>
+    </div>
+
+    <!--HTML for Skills Form Array -->
+    <div class="input-box skills" formArrayName="skills">
+      <h4>Add Skills</h4>
+      <div class="column">
+        <input type="text" placeholder="Add Skill...">
+        <button type="button" class="btn-add-delete">Delete</button>
+      </div> 
+    </div>
+    <button type="button" class="btn-add-delete">Add Skills</button>
+
+    <!--HTML for Experience Form Array -->
+    <div class="input-box">
+      <div class="experience">
+        <label>Experience</label>
+        <input type="text" placeholder="Company Name" />
+        <div class="column">
+          <div class="select-box">
+            <select>
+              <option hidden>Position</option>
+              <option>Junior Developer</option>
+              <option>Software Developer</option>
+              <option>Senior Developer</option>
+              <option>Team Lead</option>
+            </select>
+          </div>
+          <input type="number" placeholder="Experience" />
+        </div>
+        <div class="column">
+          <input type="date" placeholder="Start Date" />
+          <input type="date" placeholder="End Date" />
+        </div>
+        <button type="button" class="btn-add-delete">Delete Experience</button>
+      </div>
+    </div>
+    <button type="button" class="btn-add-delete">Add Experience</button>
+
+    <input type="submit" value="Submit" class="submit-btn"> 
+    <!-- [disabled]="!reactiveForm.valid" -->
+  </form>
+</section>
+
+<!--uncomment below HTML for displaying form data-->
+
+<!-- <section class="user-detail-container">
+  <div class="user-details-container">
+    <div class="user-avatar">
+      <p>JS</p>
+    </div>
+    <div class="user-details">
+      <div class="user-name">
+        <h2>John Smith</h2>
+      </div>
+      <p><b>Email:</b> johnsmith@gmail.com</p>
+      <p><b>Username:</b> johnsmith86 </p>
+      <p><b>Date of birth:</b> July 21, 1989</p>
+      <div class="user-name">
+        <h3>Address</h3>
+      </div>
+      <span>India</span>.
+      <span> New Delhi</span>.
+      <span> NCR</span>.
+      <span> 234565</span>
+    </div>
+  </div>
+</section> -->
