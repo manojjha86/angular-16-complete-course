@@ -1,0 +1,203 @@
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 20px 50px;
+  border-radius: 8px;
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 20px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 5px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  /* border: 1px solid #ddd; */
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+
+.experience :where(input, .select-box) {
+  margin-top: 15px;
+}
+.experience{
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: #bcbcbc 2px solid;
+  margin-top: 10px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form .submit-btn {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #E7005E;
+}
+.form .submit-btn:hover {
+  background: #E70044;
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+.form-shadow{
+  box-shadow: rgba(187, 185, 185, 0.35) 0px 5px 15px;
+}
+
+input.ng-invalid.ng-touched{
+  border: red 2px solid;
+}
+
+small{
+  color: red;
+  font-weight: bold;
+}
+
+.btn-gen-username{
+  margin: 10px 0px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #E7005E;
+  border: none;
+  color: white;
+}
+.btn-add-delete{
+  margin: 10px 0px;
+  padding: 14px 30px;
+  border-radius: 5px;
+  background: #E7005E;
+  border: none;
+  color: white;
+}
+.skills{
+  padding: 20px 0px;
+}
+.user-detail-container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.user-details-container{
+  display: flex;
+}
+.user-avatar{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #282C35;
+  font-size: 75px;
+  font-weight: bold;
+  padding: 40px 40px;
+  color: white;
+}
+
+.user-details{
+  padding: 0px 40px;
+}
+.user-name{
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: #123 2px solid;
+  width: 100%;
+  margin-top: 10px;
+}
+span{
+  padding: 5px 5px;
+  font-weight: bold;
+}
+
+input.ng-invalid.ng-touched{
+  border: red 2px solid;
+}
+
+input.ng-pending{
+  border: yellow 2px solid;
+}
+
+.container.VALID{
+  border: green 3px solid;
+}
+.container.INVALID{
+  border: red 3px solid;
+}
+.container.PENDING{
+  border: orange 3px solid;
+}
