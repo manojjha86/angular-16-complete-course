@@ -1,0 +1,26 @@
+
+h2, button{
+    margin: 10px 0px;
+}
+
+.container{
+    padding: 60px 200px;
+    font-family: 'Lucida Sans';
+}
+
+.data-list{
+    padding: 15px 50px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    margin: 5px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #efefef;
+}
+
+button{
+    padding: 15px 30px;
+    font-weight: bold;
+    border: none;
+    background-color: #EE3915;
+    color: white;
+}

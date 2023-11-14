@@ -1,0 +1,41 @@
+.div-container{
+    display: flex;
+    margin: 50px 50px;
+    padding: 50px 50px;
+    background-color: #28282B;
+    border-radius: 5px;
+}
+
+h1{
+    margin: 50px 50px;
+}
+
+.sub-container{
+    margin: 0px 10px;
+    width: 480px;
+    padding: 25px 50px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.data-list{
+    padding: 15px 50px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    margin: 5px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #efefef;
+}
+
+hr{
+    border: #28282B 1.5px solid;
+    margin: 10px 0px;
+}
+
+button{
+    padding: 15px 45px;
+    border: none;
+    margin: 5px 2px;
+    background-color: #1ABC9C;
+    color: white;
+    border-radius: 3px;
+}
