@@ -1,0 +1,12 @@
+.container{
+    padding: 60px 200px;
+    font-family: 'Lucida Sans';
+}
+
+.task-list{
+    padding: 15px 50px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #efefef;
+}
