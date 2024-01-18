@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    background-color: #28282B;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+    font-weight: bold;
+}
+.header-logo{
+    padding: 1% 5%;
+    width: 30%;
+}
+.header-nav{
+    padding: 20px 20px;
+    width: 70%;
+    text-align: right;
+}
