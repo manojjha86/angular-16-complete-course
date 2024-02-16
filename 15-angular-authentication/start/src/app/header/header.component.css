@@ -1,0 +1,21 @@
+.app-header{
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.app-header-logo{
+    padding: 5px 30px;
+    width: 50%;
+    color: #28282B;
+}
+.app-header-navbar{
+    padding: 18px 30px;
+    width: 50%;
+    text-align: right;
+}
+
+.app-header-navbar a{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #28282B;
+}
