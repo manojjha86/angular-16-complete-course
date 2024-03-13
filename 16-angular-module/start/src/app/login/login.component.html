@@ -1,0 +1,38 @@
+<div class="app-login-form">
+    <app-snackbar [errorMessage]="errorMessage" *ngIf="errorMessage"></app-snackbar>
+    <h2>{{ isLoginMode ? 'Login' : 'Signup'}} Here</h2>
+    <app-loader *ngIf="isLoading"></app-loader>
+    <form #authForm="ngForm" (ngSubmit)="onFormSubmitted(authForm)" *ngIf="!isLoading">
+        <div class="form-input">
+            <label>Email Address</label>
+            <input type="email" 
+                placeholder="Email address" 
+                name="email" 
+                ngModel
+                required
+                email
+            >
+        </div>
+        <div class="form-input">
+            <label>Password</label>
+            <input type="password" 
+                placeholder="Password" 
+                name="password" 
+                ngModel
+                required
+                minlength="8"
+            >
+        </div>           
+        <button type="submit" 
+            class="app-login-btn"
+            [disabled]="authForm.invalid"
+        >{{ isLoginMode ? 'Login' : 'Signup'}}</button>
+        <p>{{isLoginMode ? 'Do not have an accout yet?' : 'Already have an account?'}}
+            <button 
+                class="app-toggle-btn" 
+                type="button" 
+                (click)="onSwitchMode()"
+            >{{isLoginMode ? 'Register Here.' : 'Login Here'}}</button>
+        </p>
+    </form>
+</div>

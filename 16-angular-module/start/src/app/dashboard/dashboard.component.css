@@ -1,0 +1,124 @@
+.dashboard-container{
+    padding: 30px 100px;
+}
+
+hr{
+    border: #dedede 1.5px solid;
+    margin: 20px 0px;
+}
+.dashboard-item-container{
+    margin-top: 30px;
+    padding: 30px 50px;
+    border: #dedede 1.5px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.task-action-icons{
+    text-align: right;
+}
+.task-action-btn{
+    margin: 0px 5px;
+    border: none;
+    background-color: transparent;
+}
+
+i{
+    font-size: 16px;
+}
+
+.task-item{
+    width: 23%;
+    margin: 10px 10px;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.task-complete{
+    border-top: green 10px solid;
+}
+.task-in-progress{
+    border-top: orange 10px solid;
+}
+.task-started{
+    border-top: #3498DB 10px solid;
+}
+.task-open{
+    border-top: red 10px solid;
+}
+.task-title{
+    border-bottom: #28282B 2px solid;
+}
+
+.create-task-btn{
+    padding: 10px 20px;
+    background-color: #28282B;
+    border: #cdcdcd 1px solid;
+    color: white;
+    margin: 0px 2px;
+    border-radius: 20px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .sb {
+    min-width: 350px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    border-radius: 5px;
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    top: 40px; /* 30px from the bottom */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  .sb-error{
+    background-color: #E74C3C; /* Black background color */
+    color: #fff; /* White text color */
+  }
+
+  .sb-success{
+    background-color: #1ABC9C; /* Black background color */
+    color: #28282B; /* White text color */
+  }
+
+  /* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 40px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 40px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }

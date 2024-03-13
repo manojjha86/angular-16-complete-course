@@ -1,0 +1,37 @@
+<div class="overlay">
+	<div class="popup">
+        <h2>{{ currentTask?.title }}</h2>
+        <hr>
+		<button class="close" href="#" (click)="OnCloseTaskDetail()">&times;</button>
+		<div class="content">
+			<section class="container">
+                
+                <h3>Description</h3>
+                <p>
+                    {{ currentTask?.desc }}
+                </p>
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="width: 50%;">
+                        <strong>Assigned To: </strong>
+                        {{ currentTask?.assignedTo }}
+                    </div>
+                    <div style="width: 50%;">
+                        <strong>Created At: </strong>
+                        {{ currentTask?.createdAt }} 
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="width: 50%;">
+                        <strong>Priority: </strong>
+                        {{ currentTask?.priority }}
+                    </div>
+                    <div style="width: 50%;">
+                        <strong>Current Status: </strong>
+                        {{ currentTask?.status }} 
+                    </div>
+                </div>
+            </section>
+		</div>
+	</div>
+</div>
+
