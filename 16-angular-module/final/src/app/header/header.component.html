@@ -1,0 +1,25 @@
+<div class="app-header">
+    <!--APP LOGO-->
+    <div class="app-header-logo">
+        <h2>Task Management</h2>
+    </div>
+
+    <!--APP NAVBAR-->
+    <div class="app-header-navbar">
+        <a routerLink="/">HOME</a>
+        
+        <div class="dropdown" *ngIf="isLoggedIn">
+            <button class="dropbtn">DASHBOARD 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a routerLink="dashboard/overview">OVERVIEW</a>
+              <a routerLink="dashboard/stats">STATS</a>
+              <!-- <a routerLink="dashboard/more">MORE LINK</a> -->
+            </div>
+        </div> 
+
+        <a routerLink="/login" *ngIf="!isLoggedIn">LOGIN</a>
+        <a *ngIf="isLoggedIn" (click)="onLogout()">LOGOUT</a>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.status-content{
+    padding: 30px 30px;
+    margin: 50px 100px;
+    border: #fff 1px solid;
+}
+thead{
+    font-weight: bold;
+}
+table, td, th {
+    border: #cdcdcd 1px solid;
+  }
+  td{
+    padding: 5px 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
